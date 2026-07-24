@@ -27,7 +27,7 @@ I rebuilt their pipeline from scratch:
 - Same three ensemble strategies (bagging, boosting, stacking)
 - Same 10-fold cross-validation setup
 
-Gathering my numbers from the same dataset as theirs, using a completely different toolchain (scrikit-learn instead of WEKA), was just to test if I knew I understood their methodology or not.
+Gathering my numbers from the same dataset as theirs, using a completely different toolchain (scikit-learn instead of WEKA), was just to test if I knew I understood their methodology or not.
 
 ### Handling missing data two ways
 
