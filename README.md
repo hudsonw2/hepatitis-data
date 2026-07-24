@@ -43,15 +43,19 @@ Ensembling gave a small accuracy bump in some cases, so I added a paired signifi
 
 ## Project structure
 
-data/ raw + cleaned datasets (dropped-rows and imputed versions)
-src/ preprocessing, single classifiers, ensembles
-results/ output tables and charts from each script
-results/comparison.md write-up comparing my numbers to the paper's
+- data/ raw + cleaned datasets (dropped-rows and imputed versions)
+- src/ preprocessing, single classifiers, ensembles
+- results/ output tables and charts from each script
+- results/comparison.md write-up comparing my numbers to the paper's
 
 ## Running it
 
-pip install -r requirements.txt
-python3 src/preprocess.py
-python3 src/single_classifiers.py
-python3 src/ensembles.py
+- pip install -r requirements.txt
+- python3 src/preprocess.py
+- python3 src/single_classifiers.py
+- python3 src/ensembles.py
+
+## Documentation
+
+To see results please consider looking [here](https://github.com/hudsonw2/hepatitis-data/blob/main/results/comparison.md).
 
