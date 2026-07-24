@@ -1,0 +1,5 @@
+model,accuracy,p_value
+SMO (baseline),0.8875,
+Bagging+SMO,0.875,0.3434363961379136
+Stacking,0.8625,0.16785065605707505
+AdaBoostM1+SMO,0.8375,0.10388813106210176
