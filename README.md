@@ -17,8 +17,7 @@ And the dataset we both used:
 >UCI Machine Learning Repository.
 >https://archive.ics.uci.edu/dataset/46/hepatitis
 
-They compared five classifiers and three ensemble methods on the UCI Hepatitis dataset using WEKA. Their comparison was a great foundation to
-learn from, and this project is my attempt to reproduce it in Python, then extend it with a few pieces I was curious about.
+They compared five classifiers and three ensemble methods on the UCI Hepatitis dataset using WEKA. Using these classifiers they sought to try to predict, based on a variety of variables, whether patients were going to pass from Hepatitis using machine learning. Their comparison was a great foundation to learn from, and this project is my attempt to reproduce it in Python, then extend it with a few pieces I was curious about.
 
 ## What "reproduction" meant for me
 

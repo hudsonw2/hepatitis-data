@@ -39,7 +39,7 @@ The paper reports accuracy only. Given the class imbalance in the dataset (123 L
 
 ### Statistical testing
 
-The paper reports raw accuracy differences without testing whether they are meaningful. This repo runs a paired t-test between each ensemble's fold-wise accuracy scores and the base classifier's scores. On the imputed dataset, none of the bagging, boosting, or stacking beat the single SMO classifier at p < 0.05, with Adaboost showing significantly worse at p = 0.043. It suggests the paper's reported gains from ensembling may not hold up as reliable improvements on this dataset size.
+The paper reports raw accuracy differences without testing whether they are meaningful. This repo runs a paired t-test between each ensemble's fold-wise accuracy scores and the base classifier's scores. On the imputed dataset, none of the bagging, boosting, or stacking beat the single SMO classifier at p < 0.05, with AdaBoost showing significantly worse accuracy scores at a value of p = 0.043. It suggests the paper's reported gains from ensembling may not hold up as reliable improvements on this dataset size.
 
 ## Takeaway
 
