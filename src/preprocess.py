@@ -21,7 +21,6 @@ CONTINUOUS_COLS = ["age", "bilirubin", "alk_phosphate", "sgot", "albumin", "prot
 
 
 def load_raw() -> pd.DataFrame:
-    """Load the raw comma-separated file, treating '?' as missing."""
     df = pd.read_csv(RAW_PATH, header=None, names=COLUMNS, na_values="?")
 
  
@@ -35,12 +34,10 @@ def load_raw() -> pd.DataFrame:
 
 
 def make_dropna_version(df: pd.DataFrame) -> pd.DataFrame:
-    """Paper's approach: drop any row with at least one missing value."""
     return df.dropna().reset_index(drop=True)
 
 
 def make_imputed_version(df: pd.DataFrame) -> pd.DataFrame:
-    """Improved approach: median-impute continuous, mode-impute categorical."""
     df_imputed = df.copy()
 
     for col in CONTINUOUS_COLS:
