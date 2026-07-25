@@ -14,6 +14,12 @@ dataset only.
 | SMO  | 80.00% | 88.75% | 85.08% |
 | IBk  | 81.25% | 86.25% | 82.50% |
 
+![Single classifiers, dropna dataset](single_classifiers_dropna.png)
+
+Note the wider swing in NB's accuracy compared to the imputed version below is a visible effect of training on only 80 patients instead of 155.
+
+![Single classifiers, imputed dataset](single_classifiers_imputed.png)
+ 
 *The paper does not state its post-cleaning sample size; it only says rows
 with missing values were dropped from the original 155.
 
@@ -24,6 +30,9 @@ with missing values were dropped from the original 155.
 | Bagging + base   | 85.00% (bagging+MLP) | 87.50% (bagging+SMO) | 85.71% (bagging+SMO) |
 | Boosting + base  | 83.75% (AdaBoost+MLP) | 83.75% (AdaBoost+SMO) | 79.38% (AdaBoost+SMO) |
 | Stacking + base  | 86.25% (stacking+MLP) | 86.25% (stacking) | 83.79% (stacking) |
+
+![Ensemble comparison, dropna dataset](ensembles_dropna.png)
+![Ensemble comparison, imputed dataset](ensembles_imputed.png)
 
 Note on stacking: the paper builds "stacking" from a single repeated base classifier through WEKA's Vote meta-classifier. This repo instead uses the standard definition of stacking: combining several different classifiers (SVM, MLP, k-NN) under a logistic regression meta-learner. Numbers are not directly comparable for that row.
 
