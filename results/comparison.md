@@ -44,7 +44,7 @@ The paper drops every row with a missing value. For this dataset it proves to be
 
 ### Metrics
 
-The paper reports accuracy only. Given the class imbalance in the dataset (123 LIVE vs. 32 DIE), accuracy alone can be misleading. A model that always predicts LIVE would score close to 80% while never catching a DIE case. This repo also reports on precision, recall, F1, and ROC-AUC per classifier (see 'single_classifiers_-.csv').
+The paper reports accuracy only. Given the class imbalance in the dataset (123 LIVE vs. 32 DIE), accuracy alone can be misleading. A model that always predicts LIVE would score close to 80% while never catching a DIE case. Because of this fact I also wanted each classifier to report on precision, recall, F1, and ROC-AUC (see 'single_classifiers_-.csv') in order to gain another perspective and also try to eliminate errors that matter the most depending on the context.
 
 ### Statistical testing
 
