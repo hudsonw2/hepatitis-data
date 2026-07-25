@@ -52,4 +52,4 @@ The paper reports raw accuracy differences without testing whether they are mean
 
 ## Takeaway
 
-The conclusion at hand shows that the paper's findings replicate: esembling gives, at best, a modest bump overr the single best classifier on this dataset, and that bump is not guaranteed to be statistically meaningful given how small the dataset is after "cleaning". The specific best classifier differs (SMO here vs. MLP in the paper), which is expected as the switch from WEKA to scikit-learn's default hyperparameters and cross-validation splits.
+The conclusion at hand shows that the paper's findings replicate: esembling gives, at best, a modest bump over the single best classifier on this dataset, and that bump is not guaranteed to be statistically meaningful given how small the dataset is after "cleaning". The specific best classifier differs (SMO here vs. MLP in the paper), which is expected as the switch from WEKA to scikit-learn's default hyperparameters and cross-validation splits.
